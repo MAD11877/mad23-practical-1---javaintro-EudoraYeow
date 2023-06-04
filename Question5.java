@@ -29,6 +29,7 @@ public class Question5
      */
      
     Scanner in = new Scanner(System.in);
+    
     System.out.print("Enter a number to determine the number of integers to be entered:");
     int number = in.nextInt();
     ArrayList<Integer> integerlist = new ArrayList<>();
