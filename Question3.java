@@ -10,7 +10,12 @@ public class Question3
      * Hint: in.nextInt() to read integer
      */
      
-    Scanner in = new Scanner(System.in);
-    
+     //Scanner is to receive user input and parse them into primitive data types such as int, double or default string
+     
+     Scanner in = new Scanner(System.in);
+     System.out.print("Enter an integer: ");
+     int number = in.nextInt();
+     int result = number * number;
+     System.out.print("The multiplication result is " + result);
   }
 }

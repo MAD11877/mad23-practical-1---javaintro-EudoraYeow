@@ -18,6 +18,12 @@ public class Question4
      */
      
     Scanner in = new Scanner(System.in);
-    
+    System.out.print("Enter an integer: ");
+    int number = in.nextInt();
+    while(number != 0){
+      String symbol = "*";
+      System. out. println(symbol.repeat(number));
+      number -= 1;
+    }
   }
 }
