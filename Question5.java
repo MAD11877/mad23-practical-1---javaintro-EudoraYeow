@@ -1,4 +1,6 @@
 import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Question5
 {
@@ -28,5 +30,29 @@ public class Question5
      
     Scanner in = new Scanner(System.in);
     
+    System.out.print("Enter a number to determine the number of integers to be entered:");
+    int number = in.nextInt();
+    ArrayList<Integer> integerlist = new ArrayList<>();
+    for (int i = 0; i < amount; i++){
+      Integer data = in.nextInt();
+      integerlist.add(data);
+    }
+    int mode = 0;
+    int count = 0;
+    for (int i : integerlist){
+      int data_1 = i;
+      int temporarycount = 1;
+      for (int e : data){
+        int data_2 = e;
+        if (data_1 == data_2){
+          temporarycount++;
+        }
+        if (temporarycount > count){
+          count = temporarycount;
+          mode = data_1;
+        }
+      }
+    }
+    System.out.printIn(mode);
   }
 }
